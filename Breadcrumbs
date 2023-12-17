@@ -1,0 +1,24 @@
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "<název cesty na hp v našem případě "Domů">",
+        "item": "https://www.alove.cz/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "<název cesty položky 2>",
+        "item": "<url položky 2>"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "<název cesty položky 3>"
+      }]
+    }
+    </script>
+
+
+//pole obsahuje jen tolik položek, kolik je třeba
