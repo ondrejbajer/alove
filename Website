@@ -1,0 +1,22 @@
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+		"url": "https://www.alove.cz/",
+		"name": "ALOve.cz",
+		"description": "<1-2 větný popis webu>",
+		"publisher": {
+			"@type": "Organization",
+			"name": "ALOve"
+		},
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": {
+				"@type": "EntryPoint",
+				"urlTemplate": "https://www.alove.cz/katalog/?search={search_term_string}"
+			},
+			"query-input": "required name=search_term_string"
+			}
+		}
+	}
+</script>
