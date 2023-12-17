@@ -1,0 +1,21 @@
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://www.example.com",
+      "sameAs": ["<url sociální sítě #1>", "<url sociální sítě #2>"], //Přidáme url na všechny aktivní sociální sítě
+      "logo": "https://www.example.com/images/logo.png",
+      "name": "OLA online s.r.o.",
+      "description": "<1-2 větný popis ALOve>",
+      "email": "info@alove.cz", //e-mail v dané zemi
+      "telephone": "+420733710384", //tel kontakt v dané zemi
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Na Maninách 1040/14, , Česko",
+        "addressLocality": "Prague",
+        "addressCountry": "CZ",
+        "addressRegion": "Praha 7",
+        "postalCode": "17000"
+      },
+      "vatID": "CZ05315271",
+    }
