@@ -5,7 +5,8 @@
       "url": "https://www.example.com",
       "sameAs": ["<url sociální sítě #1>", "<url sociální sítě #2>"], //Přidáme url na všechny aktivní sociální sítě
       "logo": "https://www.example.com/images/logo.png",
-      "name": "OLA online s.r.o.",
+      "legalName": "OLA online s.r.o.",
+      "name": "OLA online s.r.o.",  
       "description": "<1-2 větný popis ALOve>",
       "email": "info@alove.cz", //e-mail v dané zemi
       "telephone": "+420733710384", //tel kontakt v dané zemi
