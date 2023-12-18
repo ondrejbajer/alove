@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+{ "@context": "https://schema.org", 
+  "@type": "Article",
+  "headline": "<H1>",
+  "description": "<DEFAUL WORDPRESS WISIWIG>",	//Pokud máme nějaký perex krátký na BE, jinak klidně skipneme 
+  "image": "<FEATURED IMAGE>", //Pokud na BE nemáme, tak skipneme 
+  "datePublished": "<datum publikování článku>",
+  "dateModified": "<datum aktualizace článku>", //Pokud nevím, tak klidně skipneme
+  "author": { //Pokud nemáme, tak skipneme celou sekci, ale doporučuji doimplementovat spíše!
+	"@type": "Person",
+	  "name": "<Jméno Příjmení autora článku>",
+	  "jobTitle": "<CF: Pozice>", //Pokud má jinak skipneme
+    "description": "<BIO autora>", //Pokud má, jinak skipneme
+	  "url": "<URL na detail autora>", //Pokud existuje, jinak skipneme, ale doporučuji doimplementovat výpis článků autora (detail autora)
+	  "image": "<Zde bude image autora>" //Pokud má, jinak skipneme
+	},  
+  
+  "commentCount": "<POČET KOMENTÁŘŮ U bonusu>", //Pokud jsou vůbec u page aktivovány, jinak skipujeme
+  "publisher": {
+    "@type": "Organization",
+    "name": "ALOve",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "<url loga ALOve>"
+    }
+  }
+ }
+</script>
