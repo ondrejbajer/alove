@@ -1,0 +1,68 @@
+
+ <script type="application/ld+json">
+ {
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"<název produktu>",
+  "description":"<popis produktu>",
+  "sku":<sku číslo produktu>,
+  "image":[ //Pole obsahuje url na všechny images produktu ideálně
+     "<url img1>",
+     "<url img2>",
+     "<url img3>"
+     ],
+   "offers":{
+      "@type":"Offer",
+      "availability":"http://schema.org/PreOrder", //všechny možnosti zde:https://schema.org/ItemAvailability
+      "price":12490, //pouze číslo, cena produktu
+      "priceCurrency":"CZK", //Místní currency ve formátu ISO 4217: https://en.wikipedia.org/wiki/ISO_4217
+      "url":"<url detailu produktu>" 
+    },
+    "brand":{
+       "@type":"Brand",
+       "name":"ALOve"
+     },
+      "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": ["CZ","SK"], //vložit všechny země, kde je možné produkt vrátit. Koupím v CZ a mohu vrátit opět v Cz a SK například
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": "<počet dní na vrácení>",
+          "returnMethod": ["ReturnByMail","ReturnAtKiosk","ReturnInStore"], //Vyberte možnost dle vašich možností
+          "returnFees": "FreeReturn" //Dle vašich možností https://schema.org/ReturnFeesEnumeration
+        }
+      "shippingDetails": [
+          {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": 79, //Zde bude cena za dopravu (nejlevnější mimo zdarma a osobní odběr. Prostě to co dovezou.)
+              "currency": "CZK" //Místní currency ve formátu ISO 4217: https://en.wikipedia.org/wiki/ISO_4217
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US" //Zde bude aktivní země domény ve formátu 2 znaků https://en.wikipedia.org/wiki/ISO_3166-1
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue", //Od kolika do kolika dnů zpracováváme objednávku u nás od vytvoření, než ji pošleme přes dopravce
+                "minValue": 0, 
+                "maxValue": 1, 
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue", //jak dlouho trvá doprava produktu dopravcovi  cca od-do
+                "minValue": 1, //Popsáno v Jiře
+                "maxValue": 5, //Popsáno v Jiře
+                "unitCode": "DAY"
+              }
+            }
+          }
+        ]
+}
+</script>
+    
+    
+    
+    
+    
